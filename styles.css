@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.botonborrado {
+    background-color: #e51414;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+.boton{
+    background-color: rgb(44, 122, 201);
+    border: none;
+    padding:0.5rem 1rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+input{
+    height: 1.5rem;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 40%;
+}
+li, ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.tarea{
+    margin: 1.5rem  0;
+}
+.posibleerror{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#resultado{
+    margin: 1.5rem 0 ;
+}
+.camporegistro{
+    margin: 0.5rem 0;
+}

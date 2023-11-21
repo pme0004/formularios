@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <!--EJERCICIO 1-->
+    <h2>Registro</h2>
+    <form >
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="paco">
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad" placeholder="99" inputmode="numeric" pattern="^[1-9]\d*$">
+        <button type="button" class="boton" id="botonej1" onclick="ej1()">Registro</button>
+    </form>
+    <div class="divcomprobacion"></div>
+
+    <!--EJERCICIO 2-->
+    <h2>Lista de tareas</h2>
+    <form>
+        <input type="text" id="nombretarea" placeholder="Nombre de la tarea" required>
+        <button type="submit" class="boton" onclick="ej2()">Agregar tarea</button>
+    </form>
+    <ul class="listado"></ul>
+
+    <!--EJERCICIO 3-->
+
+    <h2>Calculadora</h2>
+    <form>
+        <div class="camporegistro">
+            <label for="numero1">Numero 1:</label>
+            <input type="number" id="numero1">
+        </div>
+        <div class="camporegistro">
+            <label for="numero2">Numero 2:</label>
+            <input type="number" id="numero2">
+        </div>
+        <div >
+            <button type="button" class="boton" onclick="sumar()">Sumar</button>
+            <button type="button" class="boton" onclick="restar()">Restar</button>
+            <button type="button" class="boton" onclick="multiplicar()">Multiplicar</button>
+            <button type="button" class="boton" onclick="dividir()">Dividir</button>
+
+
+        </div>
+    </form>
+    <div id="resultado"></div>
+    <!--EJERCICIO 4-->
+    <h2>Formulario de registro</h2>
+    <form>
+        <div class="camporegistro">
+            <label for="nombre4">Nombre:</label>
+            <input type="text" placeholder="paco" id="nombre4" requied pattern="[a-zA-Z ]+">
+        </div>
+        <div class="camporegistro">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" placeholder="hola@hola.com" id="correo">
+        </div>
+        <div class="camporegistro">
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña">
+        </div>
+        <div class="camporegistro"  >
+            <label for="confirmarcontraseña">Confirmar contraseña:</label>
+            <input type="password" id="confirmarcontraseña" name="confirmarcontraseña">
+        </div>
+        <div>La contraseña debe contener al menos 8 caracteres, una mayuscala, una minuscula y un numero.</div>
+        <button type="button" class="boton" onclick="ej4()">Enviar</button>
+    </form>
+    <div id="posibleerror"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
