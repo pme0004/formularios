@@ -40,10 +40,13 @@ li, ul{
 .tarea{
     margin: 1.5rem  0;
 }
-.posibleerror{
+#posibleerror{
+    margin-top: 1rem;
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 5px;
+    visibility: hidden;
+    width: 20%;
 }
 #resultado{
     margin: 1.5rem 0 ;

@@ -91,7 +91,6 @@ function ej4(){
     var nombreok= /^[a-zA-Z ]+$/.test(nombre4);
     var contraseñaok=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(contraseña);
     var posibleerror=document.getElementById("posibleerror");    
-
     if(!nombreok){
         posibleerror.innerHTML="El nombre está mal";
         posibleerror.style.visibility="visible";
